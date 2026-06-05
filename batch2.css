@@ -1,0 +1,63 @@
+body{
+    color:blue;
+    background-color:yellowgreen;
+}
+/*p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+img{
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+}*/
+video{
+    height:500px;
+}
+ol{
+    list-style-type:lower-roman;
+}
+ul{
+    list-style-type:circle;
+}
+table,th,td{
+    border:1px solid  white;
+    border-collapse:collapse;
+}
+h1{
+    padding:50px;
+    border:20px solid green;
+    margin:50px;
+}
+button:hover{
+    background-color:green;
+    border-radius:5px;
+}
+button{
+    padding:10px;
+    margin:20px;
+}
+nav{
+    display: flex;
+    flex-direction:row;
+    gap:100px;
+}
+#p1{
+    font-style:normal;
+    font-weight:bolder;
+}
+#p2{
+    font-style:italic;
+}
+.pclass{
+    font-size:x-large;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.festivals{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
