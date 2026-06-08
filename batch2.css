@@ -6,14 +6,19 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: xx-large;
     font-weight: bolder;
-}
-img{
-    height: 500px;
-    width: 500px;
-    border-radius: 500px;
 }*/
+img{
+    height: auto;
+    width: 100%;
+}
+@media(max-width:600px){
+    img{
+        height:auto;
+        width:100%;
+    }
+}
 video{
-    height:500px;
+    width:100%;
 }
 ol{
     list-style-type:lower-roman;
@@ -40,8 +45,15 @@ button{
 }
 nav{
     display: flex;
-    flex-direction:row;
-    gap:100px;
+    flex-direction:column;
+    /* gap:100px; */
+}
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction:row;
+        gap:100px;
+    }
 }
 #p1{
     font-style:normal;
@@ -55,7 +67,23 @@ nav{
 }
 .grid{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+}
+@media(min-width:1024px){
+    .grid{
+        display:grid;
+    }
+    #one{
+        grid-row: 1/2;
+    }
+    #two{
+        grid-row: 1/2;
+    }
+    #three{
+        grid-row: 2/3;
+    }
+    #four{
+        grid-row: 2/3;
+    }
 }
 .festivals{
     display: grid;
